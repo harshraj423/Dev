@@ -10,7 +10,7 @@ export default function LoginPage() {
     const [password, setPassword] = useState('');
 
     function handleClick() {
-       // navigate("/home");
+       navigate("/home");
     }
 
     return (

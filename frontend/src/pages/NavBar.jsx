@@ -1,6 +1,8 @@
 
 
 export default function NavBar() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className="pb-1 border-2 border-radius-sm flex justify-between pt-2">
@@ -21,7 +23,9 @@ export default function NavBar() {
                         About Us
                     </button>
                 </div>
-                <button className="pr-4 bg-blue-600 pl-4 mr-4 rounded-full text-white">
+                <button onClick={()=>{
+                    navigate("/login")
+                }} className="pr-4 bg-blue-600 pl-4 mr-4 rounded-full text-white">
                     Login / Sign up
                 </button>
             </div>
