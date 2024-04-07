@@ -38,11 +38,11 @@ app.post('/login', async (req, res) => {
         if (user) {
             res.json(user);
         } else {
-            res.status(404).send('Invalid credentials');
+            res.status(404).send('error');
         }
     } catch (error) {
         console.error("Error during login:", error);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('error');
     }
 });
 
@@ -75,7 +75,7 @@ app.get('/allcourse', async (req, res) => {
 });
 
 
-  app.get('/course/:courseId/play/:contentId', async (req, res) => {
+  app.get('/course/:courseId99/:contentId', async (req, res) => {
     const courseId = req.params.courseId;
     const contentId = req.params.contentId;
   

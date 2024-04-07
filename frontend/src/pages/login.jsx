@@ -9,8 +9,18 @@ export default function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    function handleClick() {
-       navigate("/home");
+    async function handleClick() {
+        await axios.post("http://localhost:4000/login",{
+            username: username,
+            password: password
+        }).then((res)=>{
+            if(res=="error"){
+                window.alert("error")
+            }
+            else{
+                navigate("/home");
+            }
+        })
     }
 
     return (
