@@ -28,10 +28,10 @@ export default function LoginPage() {
             <NavBar></NavBar>
             <div className=" h-screen w-screen flex flex-col justify-center items-center ">
             <div>
-                <input  className="border-2 border-slate-700 rounded scale-125" placeholder="Username" type="text" name="username" onChange={(e) => setUsername(e.target.value)}></input>
+                <input  className="border-2 border-slate-700 rounded scale-125 mb-1" placeholder="Username" type="text" name="username" onChange={(e) => setUsername(e.target.value)}></input>
             </div>
             <div className="pt-2">
-                <input className="border-2 border-slate-700 rounded scale-125" placeholder="Password" type="text" name="password" onChange={(e) => setPassword(e.target.value)}></input>
+                <input className="border-2 border-slate-700 rounded scale-125 mb-1" placeholder="Password" type="text" name="password" onChange={(e) => setPassword(e.target.value)}></input>
             </div>
             <div className="pt-1">
                 <button className="border-2 border-slate-700 rounded-md pl-5 pr-5 text-lg bg-indigo-400" onClick={handleClick}>Submit</button>

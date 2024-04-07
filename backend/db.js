@@ -27,11 +27,12 @@ const contentSchema = new mongoose.Schema({
 
 
 const courseSchema = new mongoose.Schema({
-  name: {
+
+  title: {
     type: String,
     required: true
   },
-  instructor: {
+  description: {
     type: String,
     required: true
   },
