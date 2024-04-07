@@ -3,7 +3,8 @@ import NavBar from "./NavBar"
 import CourseCard from "../components/courseCard"
 
 export default function Homepage() {
-
+    const navigate = useNavigate();
+    
     function handleClick(){
         navigate('/courseContent')
     }

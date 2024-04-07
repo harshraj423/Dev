@@ -1,7 +1,10 @@
 import ContentCard from "../components/contentCard";
 import NavBar from "./NavBar";
+import { useNavigate } from "react-router-dom"
 
 export default function CourseContent() {
+    const navigate = useNavigate();
+
     function handleClick(){
         navigate('/videoPlayer')
     }

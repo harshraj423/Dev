@@ -5,7 +5,7 @@ import axios from "axios";
 import NavBar from "./NavBar";
 
 export default function LoginPage() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
